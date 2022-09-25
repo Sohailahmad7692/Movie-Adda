@@ -36,7 +36,7 @@ const Gallery = ({ id, media_type }) => {
 
   const fetchCredits = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=e002d8870245ea7b1c97a37fee9f11ef&language=en-US`
     );
     setCredits(data.cast);
   };

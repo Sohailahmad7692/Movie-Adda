@@ -10,7 +10,7 @@ const Trending = () => {
 
   const fetchTrending = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
+      `https://api.themoviedb.org/3/trending/all/day?api_key=e002d8870245ea7b1c97a37fee9f11ef&page=${page}`
     );
 
     setContent(data.results);
